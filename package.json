@@ -1,0 +1,74 @@
+{
+  "name": "repudiandaesint",
+  "version": "1.0.0",
+  "author": "OrrinFrami",
+  "description": "Graphviz library for TypeScript.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdaNicolas/repudiandaesint.git"
+  },
+  "keywords": [
+    "dolores",
+    "dot"
+  ],
+  "bugs": {
+    "url": "https://github.com/EdaNicolas/repudiandaesint.git/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/kamiazya"
+  },
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    },
+    "./ast": {
+      "import": "./lib/ast/index.js",
+      "require": "./lib/ast/index.cjs",
+      "types": "./lib/ast/index.d.ts"
+    }
+  },
+  "imports": {
+    "#lib/*": {
+      "import": "./lib/*/index.js",
+      "require": "./lib/*/index.cjs",
+      "types": "./lib/*/index.d.ts"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/jest": "^28.1.6",
+    "@types/jest-specific-snapshot": "^0.5.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "jest-snapshot-serializer-raw": "^1.2.0",
+    "jest-specific-snapshot": "^5.0.0",
+    "peggy": "^2.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-pegjs": "^0.5.0",
+    "rollup": "^2.77.3",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "svgo": "^2.8.0",
+    "ts-jest": "^28.0.7",
+    "ts-pegjs": "^2.1.0",
+    "typedoc": "^0.23.15",
+    "typescript": "^4.7.4"
+  }
+}
